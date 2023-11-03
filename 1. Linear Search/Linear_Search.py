@@ -1,14 +1,8 @@
-def linear_search(arr, target):
-    for i in range(len(arr)):
-        if arr[i] == target:
-            return i 
-    return -1 
-
-my_list = [1, 3, 5, 7, 9]
-target_value = 5
-result = linear_search(my_list, target_value)
-
-if result != -1:
-    print(f"{target_value} found at index {result}")
-else:
-    print(f"{target_value} not found in the list")
+def linear_search(list, key):
+    for i in range(len(list)):
+        if list[i]==key:
+            return i
+        
+list = [1,2,3,4,5,6]
+key = 5
+print(linear_search(list, key))
